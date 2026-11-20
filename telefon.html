@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="pl"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>M-BUD Piana Pur na telefonie | podgląd</title><meta name="robots" content="noindex, nofollow">
+<link rel="icon" href="img/favicon.png" type="image/png">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700;800&family=Outfit:wght@400;500&display=swap">
+<style>
+*{box-sizing:border-box}html,body{margin:0;height:100%}
+body{background:#0e0e0e;color:#fff;font:400 16px/1.5 Outfit,system-ui,sans-serif;display:flex;align-items:center;justify-content:center;gap:56px;padding:24px;min-height:100vh}
+.txt{max-width:340px}.txt img{width:150px;margin-bottom:24px}
+h1{font:800 34px/1.1 Montserrat,sans-serif;margin:0 0 14px;letter-spacing:-.02em}
+p{color:#c9c9c9;margin:0 0 22px}
+a.btn{display:inline-block;background:#E41E24;color:#fff;text-decoration:none;font-weight:600;padding:14px 22px;border-radius:10px;margin:0 8px 8px 0}
+a.ghost{background:none;border:2px solid rgba(255,255,255,.6)}
+.phone{position:relative;width:410px;height:864px;border-radius:58px;background:#1c1c1c;padding:10px;box-shadow:0 0 0 2px #3a3a3a,0 40px 90px rgba(0,0,0,.6);transform-origin:center;flex:none}
+.phone::before{content:"";position:absolute;top:22px;left:50%;width:120px;height:32px;margin-left:-60px;background:#000;border-radius:20px;z-index:2}
+.phone iframe{width:390px;height:844px;border:0;border-radius:48px;background:#fff;display:block}
+@media (max-width:900px){.txt{display:none}body{padding:0}.phone{transform:scale(var(--s,1))}}
+</style></head><body>
+<div class="txt"><img src="img/logo-jasne.png" alt="M-BUD Piana Pur">
+<h1>Tak strona wygląda na telefonie</h1>
+<p>Większość klientów szuka ocieplenia w telefonie. Przewijaj i klikaj w ramce, wszystko działa jak na prawdziwym smartfonie.</p>
+<a class="btn" href="index.html">Otwórz na komputerze</a><a class="btn ghost" href="tel:+48663409045">Zadzwoń</a></div>
+<div class="phone" id="ph"><iframe src="index.html" title="Strona M-BUD Piana Pur w widoku telefonu"></iframe></div>
+<script>function f(){var s=Math.min(1,(innerHeight-40)/864,(innerWidth-20)/410);var p=document.getElementById('ph');p.style.transform='scale('+s+')';p.style.margin=(-(1-s)*432)+'px '+(-(1-s)*205)+'px'}f();addEventListener('resize',f)</script>
+</body></html>
